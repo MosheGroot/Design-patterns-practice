@@ -4,7 +4,7 @@
 
 namespace Game::Inventories
 {
-  class Survival final : public AInventory
+  class Survival final : public Base
   {
   public:
     Survival() = default;
@@ -18,5 +18,5 @@ namespace Game::Inventories
       return *this->container_[item_name];
     }
 
-  }; //!class Survival final : public AInventory
+  }; //!class Survival final : public Base
 } //!namespace Game::Inventories

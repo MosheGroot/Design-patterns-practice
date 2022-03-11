@@ -10,7 +10,7 @@
 
 namespace Game::Inventories
 {
-  class Creative final : public AInventory
+  class Creative final : public Base
   {
   public:
     Creative() 

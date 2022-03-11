@@ -10,7 +10,7 @@
 namespace Game::Inventories
 {
 
-  class AInventory
+  class Base
   {
   // fields
   protected:
@@ -18,10 +18,10 @@ namespace Game::Inventories
 
 
   // constructor and destructor
-    AInventory() {};
+    Base() {};
 
   public:
-    virtual ~AInventory()
+    virtual ~Base()
     {
       std::for_each(container_.begin(), container_.end(),
         [] (decltype(container_)::value_type& val) { delete val.second; } );
