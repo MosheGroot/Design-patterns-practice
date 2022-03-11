@@ -7,7 +7,7 @@ Simple code with **Factory method** applied to `Workers`
 ### Result
 
 + `Workers` namespace with next hierarchy:
-  * `Workers::ABase`:
+  * class `Workers::ABase`:
     + `Builder`
     + `Doctor`
     + `Driver`
