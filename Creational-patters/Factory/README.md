@@ -2,6 +2,9 @@
 
 Simple code with **Factory method** applied to `Workers`
 
+Unlike in "ConcreteProduct <-> ConcreteCreator" scheme, 
+here [`Workers::Base::applyWorker()`](/src/workers/base.cpp) is a static **Factory method** 
+of base workers class.
 
 
 ### Result
