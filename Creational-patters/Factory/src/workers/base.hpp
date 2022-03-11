@@ -8,20 +8,20 @@ namespace Workers
 {
   /* @brief Abstract worker class
   */
-  class ABase
+  class Base
   {
   // constructors and destructor
   protected:
-    ABase(const std::string& job_name, uint64_t worktime)
+    Base(const std::string& job_name, uint64_t worktime)
       : job_name_(job_name), worktime_(worktime)
     {}
 
   public:
-    ABase(const ABase& other)
+    Base(const Base& other)
       : job_name_(other.job_name_), worktime_(other.worktime_)
     {}
 
-    virtual ~ABase() {}
+    virtual ~Base() {}
 
 
   public:
@@ -33,7 +33,7 @@ namespace Workers
 
       @exception  Throws if job with such name doesn't exists
     */
-    static ABase*  applyWorker(const std::string_view job_name, uint64_t worktime);
+    static Base*  applyWorker(const std::string_view job_name, uint64_t worktime);
 
 
   // logic
@@ -47,5 +47,5 @@ namespace Workers
     std::string           job_name_;   //< name of worker's job
     std::chrono::seconds  worktime_;   //< work time in seconds
 
-  }; //!class ABase
+  }; //!class Base
 } //!namespace Workers

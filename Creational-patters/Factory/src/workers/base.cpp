@@ -20,7 +20,7 @@ namespace Workers
 {
   
   /// Logic
-  void    ABase::work(void) const
+  void    Base::work(void) const
   {
     std::cout << "[" << Utils::getCurrentTimestamp() << "]: " 
       << this->job_name_ 
@@ -35,7 +35,7 @@ namespace Workers
 
 
   /// Factory method
-  ABase*  ABase::applyWorker(const std::string_view job_name, uint64_t worktime)
+  Base*  Base::applyWorker(const std::string_view job_name, uint64_t worktime)
   {
     // select
     if (job_name == "builder")

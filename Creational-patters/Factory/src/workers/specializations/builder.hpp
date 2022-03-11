@@ -7,12 +7,12 @@ namespace Workers
 
   /* @brief Builder worker
   */
-  class Builder final : public Workers::ABase
+  class Builder final : public Workers::Base
   {
   
   public:
     Builder(uint64_t worktime)
-      : ABase("Builder", worktime)
+      : Base("Builder", worktime)
     {}
 
   }; //!class Builder final

@@ -7,12 +7,12 @@ namespace Workers
 
   /* @brief Driver worker
   */
-  class Driver final : public Workers::ABase
+  class Driver final : public Workers::Base
   {
   
   public:
     Driver(uint64_t worktime)
-      : ABase("Driver", worktime)
+      : Base("Driver", worktime)
     {}
 
   }; //!class Driver final

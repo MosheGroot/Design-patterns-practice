@@ -36,8 +36,8 @@ namespace Managment
         throw std::invalid_argument("readConfig exception: invalid syntax of line `" + line + "`");
 
       // use factory method
-      workers.push_back(std::shared_ptr<Workers::ABase>(
-        Workers::ABase::applyWorker(splitted[0], std::stoull(splitted[1]))
+      workers.push_back(std::shared_ptr<Workers::Base>(
+        Workers::Base::applyWorker(splitted[0], std::stoull(splitted[1]))
       ));
     }
 
@@ -50,7 +50,7 @@ namespace Managment
     std::for_each(
       std::execution::par,
       workers.begin(), workers.end(),
-      [] (std::shared_ptr< Workers::ABase > worker) { worker->work(); });
+      [] (std::shared_ptr< Workers::Base > worker) { worker->work(); });
   }
 
 } //!namespace Managment

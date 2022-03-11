@@ -7,12 +7,12 @@ namespace Workers
 
   /* @brief Firefighter worker
   */
-  class Firefighter final : public Workers::ABase
+  class Firefighter final : public Workers::Base
   {
   
   public:
     Firefighter(uint64_t worktime)
-      : ABase("Firefighter", worktime)
+      : Base("Firefighter", worktime)
     {}
 
   }; //!class Firefighter final

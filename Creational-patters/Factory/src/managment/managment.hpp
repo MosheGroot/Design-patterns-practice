@@ -9,7 +9,7 @@
 namespace Managment
 {
 
-  typedef std::vector< std::shared_ptr< Workers::ABase > >  workers_t;  //< vector of workers type 
+  typedef std::vector< std::shared_ptr< Workers::Base > >  workers_t;  //< vector of workers type 
 
   /* @brief Read config with various workers from `filename` file
   */
