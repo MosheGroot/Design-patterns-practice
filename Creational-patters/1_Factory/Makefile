@@ -1,7 +1,7 @@
 NAME		:= factory
 
 CC			:= g++-11
-CFLAGS		:=  -std=c++23 -Wall -Wextra -Werror -ltbb
+CFLAGS		:=  -std=c++20 -Wall -Wextra -Werror -ltbb
 DEP_FLAGS	:= -MP -MMD
 
 SRCS_DIRS	:= $(addprefix src, \

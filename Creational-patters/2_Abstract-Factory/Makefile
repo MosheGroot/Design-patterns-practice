@@ -1,7 +1,7 @@
 NAME		:= abstract-factory
 
 CC			:= g++-11
-CFLAGS		:=  -std=c++23 -Wall -Wextra -Werror -ltbb -fsanitize=address
+CFLAGS		:=  -std=c++20 -Wall -Wextra -Werror -ltbb -fsanitize=address
 DEP_FLAGS	:= -MP -MMD
 
 SRCS_DIRS	:= $(addprefix src, \
