@@ -2,7 +2,7 @@
 
 Practice of design patterns in modern C++.
 
-Each of the pattern examples has the own README and runtime .GIF with the result of the program. Be free in checking each directory.
+Each of the pattern examples has the own `README` and runtime `.GIF` with the result of the program. Be free in checking each directory.
 
 
 ## List of patterns
