@@ -14,10 +14,15 @@ Each of the pattern examples has the own `README` and runtime `.GIF` with the re
 + [Prototype](/Creational-patters/4_Prototype)
 + [Singleton](/Creational-patters/5_Singleton)
 
+#### Structural patterns
+
++ [Adapter](/Structural-patterns/1_Adapter)
++ [Bridge](/Structural-patterns/2_Bridge)
++ [Composite](/Structural-patterns/3_Composite)
++ *[in progress]*
+
 #### Behavioural patterns
 
 *[in progress]*
 
-#### Structural patterns
 
-*[in progress]*
