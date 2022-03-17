@@ -19,6 +19,9 @@ Each of the pattern examples has the own `README` and runtime `.GIF` with the re
 + [Adapter](/Structural-patterns/1_Adapter)
 + [Bridge](/Structural-patterns/2_Bridge)
 + [Composite](/Structural-patterns/3_Composite)
++ [Decorator](/Structural-patterns/4_Decorator)
++ [Facade](/Structural-patterns/5_Facade)
++ [Flyweight](/Structural-patterns/6_Flyweight)
 + *[in progress]*
 
 #### Behavioural patterns
