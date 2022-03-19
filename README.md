@@ -22,7 +22,7 @@ Each of the pattern examples has the own `README` and runtime `.GIF` with the re
 + [Decorator](/Structural-patterns/4_Decorator)
 + [Facade](/Structural-patterns/5_Facade)
 + [Flyweight](/Structural-patterns/6_Flyweight)
-+ *[in progress]*
++ [Proxy](/Structural-patterns/7_Proxy)
 
 #### Behavioural patterns
 
