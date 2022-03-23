@@ -6,6 +6,15 @@ DEP_FLAGS	:= -MP -MMD
 
 SRCS_DIRS	:= $(addprefix src, \
 							/ \
+							/Request \
+							/ARequestHandler \
+							/Network \
+							$(addprefix /Hosts, \
+								/ \
+								/Forwarder \
+								/Router \
+								/Server \
+							) \
 						)
 
 
@@ -13,7 +22,15 @@ vpath %.cpp	$(SRCS_DIRS)
 vpath %.hpp	$(SRCS_DIRS)
 
 
-SRCS		:=  main.cpp
+SRCS		:=  main.cpp \
+						ARequestHandler/ARequestHandler.cpp \
+						Network/Network.cpp \
+						$(addprefix Hosts/, \
+							AHost.cpp \
+							Forwarder/Forwarder.cpp \
+							Router/Router.cpp \
+							Server/Server.cpp \
+						)
 
 
 
